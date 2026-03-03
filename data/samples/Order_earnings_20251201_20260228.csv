@@ -1,0 +1,28 @@
+﻿--,--,--,--,--,--,--,--,--,--,--,--,--
+Notes
+Report is based upon the order creation date.Any expenses and refunds associated with the order would reflect values at that given moment.
+"Gross amount: This amount includes the item subtotal, shipping and handling, and seller collected tax. It doesn’t include any taxes or fees that eBay collects."
+Order earnings: This shows your earnings after deducting expenses and refunds from your gross amount.
+Your cost: This is your per-unit cost of acquiring the item—it should not include general business costs. This info is never visible to buyers.
+"eBay collected tax: This is the tax eBay collects from buyers for the sale. Based on your buyers location, this can be VAT/GST/HST/QST/PST/IST."
+All amounts are inclusive of tax.
+"""--"" indicates there is no value in the cell."
+
+Order earnings report
+Seller,shadowvaultcollectibles
+Start date,Dec-01-2025 00:00:00 AM PST
+End date,Feb-28-2026 23:59:59 PM PST
+Report creation date,Mar-02-2026 13:05:08 PM PST
+
+Order creation date,Order number,Item ID,Item title,Buyer name,Ship to city,Ship to province/region/state,Ship to zip,Ship to country,Transaction currency,eBay collected tax,Item price,Quantity,Item subtotal,Shipping and handling,Seller collected tax,Discount,Payout currency,Gross amount,Final Value Fee - fixed,Final Value Fee - variable,Below standard performance fee,"Very high ""item not as described"" fee",International fee,Deposit processing fee,Regulatory operating fee,Promoted Listing Standard fee,Charity donation,Shipping labels,Payment Dispute Fee,Expenses,Refunds,Order earnings,Your cost,Net order earnings
+"Dec 2, 2025",22-13900-52642,197909404572,Gengar V 156/264 Swsh08: Fusion Strike Holo Ultra Rare (UR) Pokemon Card - LP,Steele Watson,Windthorst,TX,76389-4306,US,USD,0.6,6,1,6,1.32,--,--,USD,7.32,-0.3,-1.05,--,--,--,--,--,--,--,-1.32,--,-2.67,--,4.65,--,--
+"Dec 3, 2025",05-13927-47803,197896515715,Pokémon SV 151 Caterpie 172/165 Illustration Rare (IR) Holo – NM Pokémon Card,Kurt Zachary,Phoenix,AZ,85042-5279,US,USD,0.73,7.99,1,7.99,1.32,--,--,USD,9.31,-0.4,-1.33,--,--,--,--,--,--,--,-1.32,--,-3.05,--,6.26,--,--
+"Dec 6, 2025",12-13930-34508,197914529077,Dondozo 207/198 Sv01: Scarlet & Violet Base Set Illustration Rare Pokémon TCG NM,Matthew Kreager,Manchester,MD,21102-2529,US,USD,0.6,9.99,1,9.99,1.32,--,--,USD,11.31,-0.4,-1.58,--,--,--,--,--,--,--,-1.32,--,-3.3,--,8.01,--,--
+"Dec 7, 2025",18-13930-15391,197912192767,Gyarados HOLO Rare 6/102 Pokemon TCG Base Set Unlimited MP/VG,John Vanlandingham,Keizer,OR,97303-2270,US,USD,--,10,1,10,1.32,--,--,USD,11.32,-0.4,-1.5,--,--,--,--,--,--,--,-1.32,--,-3.22,--,8.1,--,--
+"Dec 12, 2025",04-13972-65746,197943987815,Gardevoir EX (Secret) 116/114 XY - Steam Siege Holo - Pokemon TCG Card,Angel Arellano,Chicago,IL,60608-2726,US,USD,0,75,1,75,4.76,--,--,USD,79.76,0,0,--,--,--,--,--,--,--,--,--,0,-79.76,0,--,--
+"Dec 13, 2025",08-13971-20033,197944110700,Gardevoir EX (Secret) 116/114 XY - Steam Siege Holo - Pokemon TCG Card,Michael Fedak,Cambridge,MA,02140-1213,US,USD,4.06,65,1,65,4.46,--,--,USD,69.46,-0.4,-9.74,--,--,--,--,--,--,--,-4.46,--,-14.6,--,54.86,--,--
+"Dec 15, 2025",14-13974-66787,197909381816,Detective Pikachu - (Stamped) SM190 Sm Holo Black Star Promo,Shane Gardner,Cranston,RI,02920-7617,US,USD,0.9,11.5,1,11.5,1.32,--,--,USD,12.82,-0.4,-1.82,--,--,--,--,--,--,--,-1.32,--,-3.54,--,9.28,--,--
+"Dec 16, 2025",06-13989-53213,197944050124,Cleffa 113/108 Sv3: Ruler of the Black Flame Holo (Japanese) AR Pokemon TCG Card,BRANDON AUYOUNG,Duluth,GA,30096-1006,US,USD,0.84,9.21,1,9.21,4.76,--,--,USD,13.97,-0.4,-1.96,--,--,--,--,--,--,--,-4.76,--,-7.12,--,6.85,--,--
+"Dec 17, 2025",07-13993-56445,197956986579,Marshadow 146/132 Mega Evolution Holo Rare Pokemon TCG Card Illustration Rare IR,Melanie Tavera,San Antonio,TX,78253-4691,US,USD,1.18,13,1,13,1.32,--,--,USD,14.32,-0.4,-2.05,--,--,--,--,--,--,--,-1.32,--,-3.77,--,10.55,--,--
+"Dec 17, 2025",22-13972-44444,197956977696,Incineroar GX 188/181 Rainbow Secret Rare Sun & Moon Team Up Pokemon TCG Card,Erick Canteria ,Georgetown,KY,40324-8008,US,USD,1.28,19.99,1,19.99,1.32,--,--,USD,21.31,-0.4,-2.99,--,--,--,--,--,--,--,-1.32,--,-4.71,--,16.6,--,--
+"Dec 19, 2025",03-14006-12018,197956962323,Zeraora VMAX GG42/GG70 Crown Zenith: Galarian Gallery Holo Pokemon TCG Card,Ryan Boyle,Rahway,NJ,07065-2235,US,USD,1.08,15,1,15,1.32,--,--,USD,16.32,-0.4,-2.31,--,--,--,--,--,--,--,-1.32,--,-4.03,--,12.29,--,--

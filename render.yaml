@@ -1,0 +1,39 @@
+# Render Blueprint: one-click deploy for TCG Tool backend (eBay webhook + API)
+# Docs: https://docs.render.com/blueprint-spec
+#
+# After connecting this repo in Render Dashboard:
+# 1. New → Blueprint → connect repo, select this render.yaml
+# 2. Add secret env vars when prompted: EBAY_APP_ID, EBAY_ACCOUNT_DELETION_TOKEN, EBAY_ACCOUNT_DELETION_ENDPOINT_URL
+# 3. EBAY_ACCOUNT_DELETION_ENDPOINT_URL = https://<your-service-name>.onrender.com/api/webhooks/ebay/account-deletion
+#    (Replace <your-service-name> with the web service name Render shows after deploy)
+
+databases:
+  - name: tcg-tool-db
+    databaseName: tcg_db
+    plan: free
+
+services:
+  - type: web
+    runtime: python
+    name: tcg-tool-api
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: tcg-tool-db
+          property: connectionString
+      - key: EBAY_SANDBOX
+        value: "false"
+      - key: EBAY_GLOBAL_ID
+        value: EBAY_US
+      # Set these in Render Dashboard after first deploy (sync: false = prompt / secret):
+      - key: EBAY_APP_ID
+        sync: false
+      - key: EBAY_ACCOUNT_DELETION_TOKEN
+        sync: false
+      - key: EBAY_ACCOUNT_DELETION_ENDPOINT_URL
+        sync: false

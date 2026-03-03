@@ -1,0 +1,26 @@
+# Fly.io app config. Deploy from backend/: fly deploy
+# First time: fly launch (creates app), then set secrets:
+#   fly secrets set DATABASE_URL="postgresql+psycopg2://..." EBAY_APP_ID="..." EBAY_ACCOUNT_DELETION_TOKEN="..." EBAY_ACCOUNT_DELETION_ENDPOINT_URL="https://YOUR_APP.fly.dev/api/webhooks/ebay/account-deletion"
+
+app = "tcg-tool-api"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  EBAY_SANDBOX = "false"
+  EBAY_GLOBAL_ID = "EBAY_US"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    path = "/health"
+    timeout = "5s"

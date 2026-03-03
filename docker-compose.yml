@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: tcg-db
+    environment:
+      POSTGRES_USER: tcg_user
+      POSTGRES_PASSWORD: tcg_pass
+      POSTGRES_DB: tcg_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - tcg_db_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+    container_name: tcg-backend
+    environment:
+      DATABASE_URL: postgresql+psycopg2://tcg_user:tcg_pass@db:5432/tcg_db
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+
+volumes:
+  tcg_db_data:
+
