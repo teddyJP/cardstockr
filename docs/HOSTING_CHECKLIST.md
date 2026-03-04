@@ -103,6 +103,12 @@ python -m scripts.ingest_ebay_all_pokemon --max-pages 5
 
 ---
 
+## Custom domain (e.g. api.cardalpha.com)
+
+To use a project domain instead of `*.onrender.com`, see **[CUSTOM_DOMAIN_AND_NAMING.md](./CUSTOM_DOMAIN_AND_NAMING.md)** for name ideas and step-by-step: buy domain → add in Render Custom Domains → set CNAME at registrar → update `EBAY_ACCOUNT_DELETION_ENDPOINT_URL` and eBay portal.
+
+---
+
 ## Quick reference
 
 | Step | Action |
@@ -113,3 +119,4 @@ python -m scripts.ingest_ebay_all_pokemon --max-pages 5
 | 4 | Open https://YOUR-RENDER-URL/health → expect `{"status":"ok"}` |
 | 5 | eBay Portal → Marketplace Account Deletion → paste URL + token → Save → Send Test Notification |
 | 6 | (Optional) Run ingest script locally |
+| 7 | (Optional) Custom domain: see CUSTOM_DOMAIN_AND_NAMING.md |
